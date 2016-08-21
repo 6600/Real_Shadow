@@ -1,0 +1,18 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <style>.block { margin: 20px 30px; display:inline-block; width:50px; height:50px; } .big { width: 380px; height: 100px; line-height: 100px; margin-bottom: 200px; border-radius: 10px; } .c {background:rgba(193,193,193,.5)}</style>
+    <title>灯光反射效果</title></head>
+  
+  <body>
+    <span rel="" class="realshadow block rect c"></span>
+    <div class="inset block big">Inset shadows are supported as well
+      <script type="text/javascript" src="realshadow.js"></script>
+      <script type="text/javascript">(function() {
+          realshadow(document.getElementsByClassName('realshadow'));
+          realshadow(document.getElementsByClassName('inset'), {inset: true});})();
+		</script>
+  </body>
+</html>
